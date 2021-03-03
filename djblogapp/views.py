@@ -9,7 +9,6 @@ from .models import Post
 
 def home(request):
     posts = Post.objects.all()
-
     return render(request, 'djblogapp/index.html', {'posts': posts})
 
 def about(request):
