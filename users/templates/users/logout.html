@@ -1,0 +1,17 @@
+{% extends 'djblogapp/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <div class="content-section">
+        <h3>You Have Been Logged Out</h3>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Did you log out by error ?? --><a class="ml-2" href="{% url 'login' %}">Login Again</a>
+                <br>
+                <a class="" href="{% url 'blog-home' %}">Home Page</a>
+            </small>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -13,3 +13,5 @@ def home(request):
 
 def about(request):
     return render(request, 'djblogapp/about.html')
+
+
