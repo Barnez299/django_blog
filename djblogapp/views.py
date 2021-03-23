@@ -18,6 +18,7 @@ class PostListView(ListView):
     model = Post
     template_name='djblogapp/index.html'
     context_object_name = 'posts'
+    ordering = ['-date_posted']
     paginate_by = 1
 
 def about(request):
